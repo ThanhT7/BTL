@@ -1,0 +1,156 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đặt phòng khách sạn</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+
+            .s1{
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background-color: #5c71e3;
+                color: white;
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav {
+                background-color: #f1f1f1;
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: black;
+                margin: 0 5px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            form input[type="search"] {
+                flex-grow: 1;
+                padding: 5px;
+                margin-right: 10px;
+            }
+
+            form button {
+                padding: 5px 10px;
+            }
+
+            .vuichoi {
+                float: left;
+                width: 30%;
+                padding: 20px;
+                background-color: #f1f1f1;
+                text-align: center;
+            }
+
+            .vuichoi h3 {
+                margin-top: 0;
+                text-align: center;
+            }
+
+            .main {
+                float: right;
+                width: 70%;
+                padding: 20px;
+            }
+
+            footer {
+                background-color: #d84828;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                clear: both;
+            }
+            .khung-dat-phong{
+                max-width: 250px;
+                margin: 30px auto;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                display: inline-block;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div class="s1">
+        <header>
+            <h2>Trang web đặt phòng khách sạn</h2>
+        </header>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="trangdatphong.html">Khách sạn</a>
+            <a href="trangdangnhap.html">Đăng nhập</a>
+            <a href="trang4.html">Trợ giúp</a>
+        </nav>
+        <main>
+            <form action="trang10.html">
+                <input type="search" placeholder="Thành phố, khách sạn hoặc điểm đến">
+                <button>Tìm kiếm</button>
+            </form>
+            <h2>Khách sạn được đề xuất cho bạn</h2>
+            <div class="khung-dat-phong">
+                <img src="ksv.jpg" width="250" height="200"  alt="Khách sạn 1">
+                <div class="info">
+                    <h3>SanEtch Hotel</h3>
+                    <p>Hà Nội</p>
+                    <p>Giá đêm: 1.000.000VND</p>
+                </div>
+                <nav>
+                    <a href="trangdatphong.html">Đặt ngay</a>
+                </nav>
+                </div>
+            <div class="khung-dat-phong">
+                <img src="ksv1.jpg" width="250" height="200" alt="Khách sạn 2">
+                <div class="info">
+                    <h3>JDn hotel</h3>
+                    <p>Hà Giang</p>
+                    <p>Giá đêm : 900.000VND</p>
+                </div>
+                <nav>
+                    <a href="trangdatphong.html">Đặt ngay</a>
+                </nav>
+            </div>
+            <div class="khung-dat-phong">
+                <img src="ksv2.jpg" width="250" height="200" alt="Khách sạn 2">
+                <div class="info">
+                    <h3>KCS hotel</h3>
+                    <p>Hà Nội</p>
+                    <p>Giá đêm : 950.000VND</p>
+                </div>
+                <nav>
+                    <a href="trangdatphong.html">Đặt ngay</a>
+                </nav>
+            </div>
+        </main>
+       <div>
+        <h3>Gợi ý địa điểm vui chơi cho bạn</h3>
+        <p>Đà Nẵng</p>
+        <p>Hà Nội</p>
+        <p>Quảng Ninh</p>
+       </div>
+        <footer>
+            &copy; 2024 Datphongkhachsan.com. All rights reserved.
+        </footer>
+        </body>
+        </html>

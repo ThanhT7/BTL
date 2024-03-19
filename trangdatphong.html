@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chọn khách sạn và đặt phòng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+        background-color: #5c71e3;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(155, 42, 42);
+        margin: 0 5px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .main {
+        float: right;
+        width: 70%;
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #d84828;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        clear: both;
+    }
+    .khung-dat-phong{
+        max-width: 300px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    .khung-dat-phong2{
+      max-width: 5000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: left;
+  }
+
+    input[type="text"], input[type="email"], input[type="tel"], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="date"], select{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .hop1{
+      display: inline-block;
+    }
+    .hop2{
+      display: inline-block;
+    }
+  </style>
+  <script>
+    function handleSubmit() {
+      var name = document.getElementById("name").value;
+      var checkIn = document.getElementById("check-in").value;
+      var checkOut = document.getElementById("check-out").value;
+      var hotel = document.getElementById("hotel").value;
+      var message = "Tên: " + name + "\nNgày đến: " + checkIn + "\nNgày đi: " + checkOut + "\nKhách sạn: " + hotel;
+
+      alert(message);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Đặt phòng khách sạn</h1>
+  </header>
+  <main>
+    <div class="khung-dat-phong2">
+      <h2>Chọn phòng và điền thông tin</h2>
+      <div onsubmit="handleSubmit()">
+        <div>
+          <div class="hop1">
+            <label for="name">Tên người đặt:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="hop1">
+            <label for="mobile">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+        
+        <div>
+          <div class="hop1">
+            <label for="check-in">Ngày nhận phòng:</label>
+            <input type="date" id="check-in" name="check-in" required>
+          </div>
+          
+          <div class="hop1">
+            <label for="check-out">Ngày trả phòng:</label>
+            <input type="date" id="check-out" name="check-out" required>
+          </div>
+        </div>
+      
+        <div class="hop">
+          <label for="hotel">Chọn khách sạn:</label>
+          <select id="hotel" name="hotel" required>
+            <option value="">-- Chọn khách sạn --</option>
+            <option value="Khách sạn ECy">Khách sạn ECy</option>
+            <option value="Khách sạn BTK">Khách sạn BTK</option>
+            <option value="Khách sạn NKs">Khách sạn NKs</option>
+            <option value="Khách sạn KSn">Khách sạn KSn</option>
+            <option value="Khách sạn KXSn">Khách sạn KXSn</option>
+        </select>
+        </div>
+        <input type="submit" value="Đặt phòng">
+      </div>
+    </div>
+    <div class="s1">
+      <div class="khung-dat-phong">
+        <nav>
+        <img src="ks1.jpg" width="250" height="150" alt="Hình ảnh khách sạn 1">
+        <h2 style="color: rgb(4, 56, 201);">Khách sạn ECy</h2>
+        <p>Địa chỉ: Hà Nội</p>
+        <p>Mô tả: Một khách sạn sang trọng với các tiện nghi hiện đại và phòng ngủ thoải mái.</p>
+        <a href="trang5.html">Hiển thị thông tin phòng</a>
+        </nav>
+      </div>
+      <div class="khung-dat-phong">
+        <nav>
+        <img src="ks2.1.jpg" width="235" height="150" alt="Hình ảnh khách sạn 2">
+        <h2 style="color: rgb(4, 56, 201);">Khách sạn BTK</h2>
+        <p>Địa chỉ: Đà Nẵng</p>
+        <p>Mô tả: Một khách sạn tiện nghi với không gian thoáng đãng và phòng tắm riêng.</p>
+        <a href="trang6.html">Hiển thị thông tin phòng</a>
+        </nav>
+      </div>
+      <div class="khung-dat-phong">
+        <nav>
+        <img src="ks3.jpg"  width="235" height="150" alt="Hình ảnh khách sạn 3">
+        <h2 style="color: rgb(4, 56, 201);">Khách sạn NKs</h2>
+        <p>Địa chỉ: Hà Giang</p>
+        <p>Mô tả: Một khách sạn ấm cúng với không gian xanh và nhân viên phục vụ tận tâm.</p>
+        <a href="trang7.html">Hiển thị thông tin phòng</a>
+      </nav>
+      </div>
+      <div class="khung-dat-phong">
+        <nav>
+        <img src="ks4.jpg"  width="235" height="150" alt="Hình ảnh khách sạn 4">
+        <h2 style="color: rgb(4, 56, 201);">Khách sạn KSn</h2>
+        <p>Địa chỉ: Nha Trang</p>
+        <p>Mô tả: Một khách sạn ven biển với cảnh quan tuyệt đẹp và các hoạt động giải trí thú vị.</p>
+        <a href="trang8.html">Hiển thị thông tin phòng</a>
+      </nav>
+      </div>
+      <div class="khung-dat-phong">
+        <nav>
+        <img src="ks5.jpg"  width="235" height="150" alt="Hình ảnh khách sạn 5">
+        <h2 style="color: rgb(4, 56, 201);">Khách sạn KXSn</h2>
+        <p>Địa chỉ: Đà Lạt</p>
+        <p>Mô tả: Một khách sạn nằm trong khu vườn với khung cảnh lãng mạn và dịch vụ chuyên nghiệp.</p>
+        <a href="trang9.html">Hiển thị thông tin phòng</a>
+      </nav>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2024 Datphongkhachsan.com. All rights reserved.
+  </footer>
+</body>
+</html>
