@@ -1,0 +1,92 @@
+header {
+    background-color: #5c71e3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(155, 42, 42);
+    margin: 0 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #d84828;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+.khung-dat-phong{
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+.khung-dat-phong2{
+  max-width: 5000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="date"]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.hop1{
+  display: inline-block;
+}
+.hop2{
+  display: inline-block;
+}
